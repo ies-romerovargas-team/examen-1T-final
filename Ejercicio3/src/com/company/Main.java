@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 	// palabrasImpares
-        String a = "El perro de San Roque";
+        String a = "El perro de San Roque no tiene rabo";
         System.out.println(a);
         System.out.println(palabrasImpares(a));
         //
@@ -23,7 +23,7 @@ public class Main {
         int i;
         for (i = 0; i < palabras.length; i++)
         {
-            if(palabras[i].length()>2)
+            if(palabras[i].length()%2==1)
             {
                 devuelve = devuelve + palabras[i] + " ";
             }

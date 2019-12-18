@@ -4,33 +4,40 @@ public class Main {
 
     public static void main(String[] args) {
 	// separaNegativosPositivos
-        int[] array1 = {4, -5, 1, -8, 2, -1};
-        escribeArray(array1);
-        escribeArray(separaNegativosPositivos(array1));
+        int[] a = {4, -5, 1, -8, 2, -1};
+        escribeArray(a);
+        escribeArray(separaNegativosPositivos(a));
         //
-        int[] array2 = {5, 2, -1, -2};
-        escribeArray(array2);
-        escribeArray(separaNegativosPositivos(array2));
+        int[] b = {5, 2, -1, -2};
+        escribeArray(b);
+        escribeArray(separaNegativosPositivos(b));
+        System.out.println("El array original no se toca:");
+        escribeArray(b);
     }
 
     public static int[] separaNegativosPositivos(int[] array)
     {
         int cont = 0;
         int aux, i, j;
-        for (i = 0; i < array.length; i++)
+        int[] array2 = new int[array.length];
+        for(j = 0; j < array.length; j++)
         {
-            if(array[i] < 0)
+            array2[j] = array[j];
+        }
+        for (i = 0; i < array2.length; i++)
+        {
+            if(array2[i] < 0)
             {
                 for (j = i; j > cont; j--)
                 {
-                    aux = array[j];
-                    array[j] = array[j - 1];
-                    array[j - 1] = aux;
+                    aux = array2[j];
+                    array2[j] = array2[j - 1];
+                    array2[j - 1] = aux;
                 }
                 cont++;
             }
         }
-        return array;
+        return array2;
     }
 
     public static void escribeArray(int[] a) {

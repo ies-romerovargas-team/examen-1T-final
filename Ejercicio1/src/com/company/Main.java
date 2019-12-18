@@ -3,10 +3,10 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	// elementosComunes3
-        int[] array1 = {1, 3, 5, 7, 10, 15, 20, 25, 30, 35, 40};
-        int[] array2 = {2, 3, 4, 5, 6, 7, 25};
-        int[] array3 = {1, 2 ,3, 4, 5, 25};
+        // elementosComunes3
+        int[] array1 = {1, 3, 3, 3, 5, 7, 10, 15, 20, 25, 30, 35, 40};
+        int[] array2 = {2, 3, 3, 3, 4, 5, 6, 7, 25};
+        int[] array3 = {1, 2 ,3, 3, 3, 3, 4, 5, 25};
         elementosComunes3(array1, array2, array3);
     }
 

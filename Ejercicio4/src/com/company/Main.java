@@ -14,7 +14,7 @@ public class Main {
 
     public static int cuentaDiptongos(String cadena)
     {
-        String[] diptongos = {"ia", "iá", "ie", "ié", "io", "ió", "ua", "uá", "ue", "ué", "üe", "uo", "uó",
+        String[] diptongos = {"ia", "iá", "ie", "ié", "io", "ió", "iu", "ua", "uá", "ue", "ué", "üe", "uo", "uó", "ui",
                               "oy", "ai", "ái", "ei", "éi", "oi", "ói", "au", "áu", "eu", "éu", "ou", "óu",
                               "ahi", "ahe", "ahu"};
         String aux = "";
